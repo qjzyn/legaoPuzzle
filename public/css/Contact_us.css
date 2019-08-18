@@ -1,0 +1,273 @@
+/*轮播开始*/
+#slider {
+  width: 100%;
+  height: 520px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#slider img {
+  display: block;
+  width: 100%;
+}
+
+.sliderImg {
+  position: relative;
+}
+
+.sliderImg>li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all ease 0.7s;
+}
+
+.sliderImg>.show {
+  opacity: 1;
+  z-index: 10;
+}
+
+#slider:hover #prev {
+  left: 0;
+}
+
+#slider:hover #next {
+  right: 0;
+}
+
+/*轮播结束*/
+/*外开始*/
+.wai {
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.wai>.left {
+  width: 380px;
+  height: 300px;
+  position: absolute;
+  top: 27%;
+  left: 10%;
+  z-index: 18;
+  color: white;
+}
+
+.wai>.left>h1 {
+  text-align: left;
+  margin-top: 30px;
+}
+/*注测页面开始*/
+/*轮播开始*/
+#slider {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#slider img {
+  display: block;
+  width: 100%;
+}
+
+.sliderImg {
+  position: relative;
+}
+
+.sliderImg>li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all ease 0.7s;
+}
+
+.sliderImg>.show {
+  opacity: 1;
+  z-index: 10;
+}
+
+#slider:hover #prev {
+  left: 0;
+}
+
+#slider:hover #next {
+  right: 0;
+}
+
+/*轮播结束*/
+
+
+
+
+
+/*联系我们开始*/
+.left_01{
+	width: 600px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 4%;
+    right: 260px;
+    border-radius: 10px;
+    padding-top: 45px;
+    z-index: 15;
+    padding: 0 30px;
+    text-align: center;
+}
+/*表单*/
+.cname,.caddress,.ctell_me>textarea{
+	color:#757575;
+	font-size:20px;
+	font-weight: 600;
+	background: #F2F2F2;
+	margin-left: 15px;
+	border-radius: 10px;
+}
+.left_01>input{
+	vertical-align: middle;
+	margin-top: 50px;
+	border-radius: 10px;
+	border:none;
+	background: rgba(226, 226, 226, 0.8);
+	text-align: center;
+}
+/*你的名字*/
+.cname{
+	width: 150px;
+	height: 50px;
+}
+.caddress{
+	width: 150px;
+	height: 50px;
+}
+.right_01{
+	width: 300px;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 15%;
+    left: 260px;
+    border-radius: 10px;
+    padding-top: 45px;
+    z-index: 15;
+    padding: 0 30px;
+    margin: 0 auto;
+	
+}
+.right_01>h1{
+	text-align: center;	
+}
+.right_01>p{
+	text-align: left;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.right_01>p>span{
+	font-size: 20px;
+	margin-right: 10px;
+}
+.contact_me{
+	height: 100px;
+	width: 300px;
+	margin-top: 50px;
+}
+.button{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	background: #79A3CC;
+	border-radius: 10px;
+	margin-bottom:30px;
+	margin-top: 15px;
+	color: #fff;
+	font-size:25px;
+	
+}
+.left_01>a,.left_01>a:hover{
+	text-decoration: none;
+}
+.button:hover{
+	text-decoration: none;
+	color: #79A3CC;
+	background: #fff;
+}
+/*媒体查询开始*/
+@media (max-width: 792px) {
+	.left_01{
+	width: 300px;
+    height: 480px;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    border-radius: 10px;
+    padding-top: 45px;
+    z-index: 15;
+    padding: 0 30px;
+    text-align: center;
+    margin-bottom:30px;
+	}
+	.ctell_me>textarea {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+    background: #F2F2F2;
+    margin-left: 0px;
+    border-radius: 10px;
+    width: 250px;
+    }
+	.right_01{
+	width: 300px;
+    height: 280px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: -58%;
+    left: 35px;
+    border-radius: 10px;
+    padding-top: 45px;
+    z-index: 15;
+    padding: 0 30px;
+    margin: 0 auto;
+	
+	}
+	#slider {
+  width: 100%;
+  height: 680px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+}
+/*右结束*/
+/*联系我们结束*/
+
+/*字体*/
+@font-face {font-family: "iconfont";
+  src: url('../lib/font/iconfont.eot?t=1566024541882'); /* IE9 */
+  src: url('../lib/font/iconfont.eot?t=1566024541882#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAUUAAsAAAAACbQAAATIAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqGdIVXATYCJAMQCwoABCAFhG0HQRtCCFGULk6C7GeB45qwhKPJKKWn18U7//hujedcgxNtXCKI9mM/e3eIaHKp3iGRSGqRBpEEsVEyodj/Jbzh39Ne0jEpmE5kRjHdnYNtB+ELYHN270u4nHNIQr5QJTlFqNBn6aflb/BuuSXk8j/HTJfPB5bfZnPJDtob4ChaB1bXpdd4WCWMt8juCNSiTyfQaJQDaO/0eLdGCmO9QNxmCWuNUkqlBhfqJbUluxbxoUZ9ektXtLz7fx//RTEiqcmMTQ/Oj3Fr8923/FK9OHIRWMPpwe1FxhygEJelxmPdMDiHo1GJ79kA1Jv6xFBTf6sqyt6KsJ7+yyMkmahlCJsJdi2U+c6mEHxPIfFNKWN0EdV3TovBFogrjB1+jKRWWXyuetP6F/I4QqGRRd/8bmy1Hstm3rmTPmtA7ty7VlfpS4LhXbYX0Zm71ugmpXeYuB17oBFsyx7jFevTSUSB2QGaua6t0mFKZkltA7N3IhTnrDCExDDpxjPIOVaP2SG3xhh9ertCagF9AptZ8xV75HK9EX05dPdullKZAWRzQEdG7dJdd6dPSG/H1JkdqGhmm0yN3NorUhf2CBWYVVVGVoUF2Zrel5lOJnmWlr5SzjSYL7MsJysrqtqGqRkGWnIFSQ5T6KGbGWmU4mpKZemODXaZ21kbKQnSbyhfK9OydozYYZnbz9gEkLwsaliaTM7K5jGP2iJPY7bIMtAZUHD49K1sJsvaZzGbZN4txQuPPIX/19g1Kzth83muXanW+Q96etSh0V4r/FWSyODpXqc4yxDhIu1FoULLOKe9Tw1ERT1XXe0aE/tNOFqTy6AOlC/mIXvaBigpHwk3CzEONJhA1+5dO8lNMAqJMEP4Euo4uAfxxAbTiZNaaiY26knPCPoIAcsPe2lDhYMDhRCiuTTnKtpeZ3U4xA6aeKaeBPxMciNvAC7KhfiRPMg/BFhP1sfFuPsLezftDsTciF5OL2lhpFfhq/Xlg8sNSPV+aGhOj8jhEVu2/LaID9KBBkedozcT0woCbNvNU+mpeFBUQUEUdOIzH/tM1ezEU+niJLhj5coOuOoDF0ADA+1wlYNvZn1uqOYZMyGM474DvwxHf/QtjcOJsOn0+gzyVKcKd2hrc8TV+7Olk9czTa1dc5cuzXUdE2f+n4LJumwIhrvkXTj+807XUG9/fwe7JiFhsqQGNAOA6ksmOFIAyCfhDQBU9/MCjuB/W2VfEN9SJAj4qoU+746vgTMFvrO6r7HoxvxpWGDW38UCNhWVY6hKkbk2U3MVr34ff0KjaaXC1k5PhhD3gNMJ9XpiSOqMQFZvDFmwc1CjyRrUqrcJjWZF792kS6uuKA2YMYEgtNsDSatPyNpdRRbsY6jR6zPUao8uNDqMrkM2mYhssquQGYzh94eMUy0sjZkEmU9MbMlUkuPjv6h05oHQC7KRM9aohthCuyQyRoBQVMEJnQ3LkqBRlCM3XmpMs/Z9UXZDHqeqNbFLQYyBYqDUH6jBkZpw2xuT3O8/oYRVYlRNQ4X6CylaNjtw5cQFgDwLa1DDpcxv4yQi7QxB16qkkAqIwnpUmkECmsuX5RBneKo7+BtrzqRVJVToTS+u7vAANDKOXCJFjhI10pMcPZPNM1ZHw9gNpJa1Wg==') format('woff2'),
+  url('../lib/font/iconfont.woff?t=1566024541882') format('woff'),
+  url('../lib/font/iconfont.ttf?t=1566024541882') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../lib/font/iconfont.svg?t=1566024541882#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

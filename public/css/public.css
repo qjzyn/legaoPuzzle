@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#myNavbar>div>ul>li:nth-child(4)>a {
+	display: inline-block;
+}
+
+.msg {
+	text-align: center;
+}
+
+.p-0 {
+	padding: 0 !important;
+}
+
+.m-0 {
+	margin: 0 !important;
+}
+
+.m-0-auto {
+	margin: 0 auto !important;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+@media (min-width: 1200px) {
+	.container {
+		width: 1265px !important;
+	}
+}
+
+/*万金油写法*/
+/*transition:all	ease	0.3s;*/
