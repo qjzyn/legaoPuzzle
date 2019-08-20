@@ -70,12 +70,12 @@ body {
 	Main Picture 
 ------------------------------------*/
 
-.headpicture {
+/*.headpicture {
 	background: url(../img/banner.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	height: 600px;
-}
+}*/
 
 
 /*-----------------------------------
@@ -120,7 +120,7 @@ h1 {
 
 .latestProjects {
 	max-width: 900px;
-	margin: 80px auto 0 auto;
+	margin: 40px auto 40px auto;
 }
 
 .latestProjects p {
@@ -148,14 +148,6 @@ h1 {
 		Footer
 ------------------------------------*/
 
-.footer {
-	padding: 13px 0px 0px 0px;
-	border-top: 1px solid #e5e5e5;
-	color: #757879;
-	font-size: 12px;
-	margin: 70px auto;
-	text-align: center;
-}
 
 /* Social buttons */
 
@@ -218,9 +210,12 @@ h1 {
 	/* Main picture */
 
 	.headpicture {
-		height: 250px;
-		margin-top: 40px;
-	}
+    height: 250px;
+    margin: 40px 0px;
+    background-size: 960px;
+    width: 100%;
+    }
+    
 
 	/* Latest Projects */
 
@@ -379,13 +374,29 @@ h1 {
 
 @media only screen and (max-width:990px) {
 	.box {
-		margin-bottom: 30px;
+		margin:30px auto;
 	}
+	.headpicture {
+	    height: 250px;
+	    margin: 40px 0px;
+	    background-size: 100%;
+	    width: 100%;
+	}	
 }
 
 @media only screen and (max-width:479px) {
 	.box .title {
 		font-size: 20px;
+	}
+	.headpicture {
+	    height: 250px;
+	    margin: 40px 0px;
+	    width: 100%;
+	}
+	.foot_1>ul {
+     display: inline; 
+    /* background: green; */
+    text-align: center;
 	}
 }
 
@@ -400,3 +411,96 @@ h1 {
 	}
 }*/
 /*增logo*/
+
+
+/*测试*/
+.textstyle{
+	/*background: red; */			/*测试*/
+}
+.foot_1{
+	border-top:1px solid #7777776e;
+}
+
+
+/*轮播开始*/
+@charset "utf-8";
+/* banner */
+.c-banner{
+	width: 100%;
+	position: relative;
+}
+.c-banner img{
+	width: 100%;
+}
+.c-banner .banner ul{
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+.c-banner .banner ul li{
+	display: none;
+	opacity: 0;
+}
+.c-banner .banner ul li:nth-child(1){
+	opacity: 1;
+	display: block;
+}
+.c-banner .banner ul li img{
+	width: 100%;
+	position: absolute;
+}
+.c-banner .nexImg,.c-banner .preImg{
+	padding: 25px 10px 25px 10px;
+	position: absolute;
+	top: 50%;
+	margin-top: -53px;
+	background: #000000;
+	opacity: 0.5;
+	border-radius: 5px;
+	z-index: 10;
+	
+}
+.c-banner .nexImg:hover,.c-banner .preImg:hover{
+	opacity: 0.8;
+}
+.c-banner .nexImg{
+	right: 0px;
+}
+.c-banner .nexImg img,.c-banner .preImg img{
+	
+	
+}
+.c-banner .jumpBtn{
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+}
+.c-banner .jumpBtn ul{
+	margin-bottom: 0px;
+}
+
+.c-banner .jumpBtn ul li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	background-color: white;
+	opacity: 0.9;
+	margin-left: 10px;
+}
+@media screen and (max-width:768px) {
+	.c-banner{
+		width: 100%;
+		height: 345px;
+		overflow: hidden;
+	}
+	.c-banner .banner ul li img{
+		width: 768px;
+		height: 345px;
+		position: absolute;
+		left: 50%;
+		margin-left: -384px;
+	}
+}
+/*轮播结束*/

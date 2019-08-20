@@ -175,3 +175,19 @@
 	cursor: pointer;
 	text-decoration: none;
 }
+/*foot开始*/
+.footer{
+	margin 0 auto;
+	line-height: 20px;
+}
+#footerLogoText {
+    text-align: center;
+    font-size: 15px;
+    /* margin: 20px 0; */
+    line-height: 50px;
+    border-top: 1px solid #b19f9fd4;
+    height: 50px;
+    margin-top: 30px;
+    color:#8c5454;
+}
+/*foot结束*/

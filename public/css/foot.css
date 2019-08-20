@@ -5,13 +5,6 @@
 	/*æµ‹è¯•*/
 }
 
-.foot_1>ul {
-	display: inline-block;
-	/* background: green; */
-	/*æµ‹è¯•*/
-	text-align: center;
-
-}
 
 /* .foot_1>ul:nth-child(2),
 .foot_1>ul:nth-child(3),
@@ -38,56 +31,49 @@
 	font-weight: 700;
 }
 
-@media (min-width: 1200px) {
-	div.container.footer>div>div>div>ul {
-		margin: 0 40px;
+/*尾部媒体查询*/
+@media (max-width: 1600px) {
+	.foot_1>ul{
+		margin:0 113px;
+		display: inline-block;
 	}
 }
 
-@media (min-width: 992px) {
-	div.container.footer>div>div>div>ul {
-		margin: 0 30px;
+@media (max-width: 1320px) {
+	.foot_1>ul{
+		margin:0 76px;
+		display: inline-block;
 	}
 }
 
-@media (min-width: 768px) {
-	div.container.footer>div>div>div>ul {
-		margin: 0 20px;
+@media (max-width: 991px)and(min-width:991px) {
+	.headpicture {
+    height: 250px;
+    margin: 40px 0px;
+    background-size: 960px;
+    width: 100%;
+    }
+    .foot_1>ul{
+		margin:0 76px;
+		display: inline-block;
+	}
+	.foot_1>ul:nth-child(4){
+		margin:0 330px;
+		margin-top: 30px;
 	}
 }
-
-@media (min-width: 576px) {
-	div.container.footer>div>div>div>ul {
-		margin: 0 10px;
+@media (max-width: 580px){
+	.foot_1>ul{
+		margin:0 50px;
+		display: inline-block;
 	}
-}
-
-@media (min-width: 350px) and (max-width:475px) {
-	div.container.footer>div>div>div>ul {
-		margin: 0 5px;
+	.foot_1>ul:nth-child(4){
+		margin-top: 30px;
 	}
-
-	body>div>div.container.footer>div>div>div>ul>li>a {
-		font-size: 11px !important;
-	}
-}
-
-@media (max-width: 345px) {
-	div.container.footer>div>div>div>ul {
-		margin: 0 5px;
-	}
-
-	body>div>div.container.footer>div>div>div>ul>li>a {
-		font-size: 9px !important;
-	}
-}
-
-@media (max-width: 768px) {
-	.textStyle {
-		font-size: 15px;
-	}
-
-	h1 {
-		font-size: 2.5rem;
+} 
+@media (max-width: 480px) {
+	.foot_1>ul{
+		margin:0 50px;
+		display: inline;
 	}
 }

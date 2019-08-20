@@ -23,6 +23,7 @@
 }
 .nav_2>ul{
 	margin-left: 30px;
+	margin-bottom: 100px;
 }
 .nav_2>ul>li{
 	margin-bottom: 15px;
@@ -309,3 +310,19 @@
 }
 /*图文编排结束*/
 /*第三部分结束*/
+/*foot开始*/
+.footer{
+	margin 0 auto;
+	line-height: 20px;
+}
+#footerLogoText {
+    text-align: center;
+    font-size: 15px;
+    /* margin: 20px 0; */
+    line-height: 50px;
+    border-top: 1px solid #b19f9fd4;
+    height: 50px;
+    margin-top: 30px;
+    color:#8c5454;
+}
+/*foot结束*/
