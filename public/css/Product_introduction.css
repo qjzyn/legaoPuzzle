@@ -175,24 +175,3 @@
 	cursor: pointer;
 	text-decoration: none;
 }
-
-/*footer*/
-.footer {
-	height: 100px;
-	line-height: 100px;
-	margin: 0 auto;
-	padding: 0;
-	margin: 0;
-}
-
-.footer>p {
-	text-align: center;
-	margin: 0;
-	font-size: 15px;
-}
-
-@media (max-width: 480px) {
-	.footer>p {
-		font-size: 13px;
-	}
-}

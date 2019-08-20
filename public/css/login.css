@@ -45,6 +45,7 @@
 /*外开始*/
 .wai {
   width: 100%;
+  height: 700px;
   padding: 0 !important;
   margin: 0 auto !important;
   position: relative;
@@ -136,7 +137,8 @@
   color: #000;
 }
 
-.main-right button {
+.main-right button,
+.main-right .login {
   width: 247px;
   height: 44px;
   border-radius: 44px;
@@ -148,7 +150,8 @@
   display: block;
 }
 
-.main-right button>a {
+.main-right button>a,
+.main-right input {
   color: #fff;
 }
 
@@ -260,18 +263,8 @@
   .main-right {
     position: initial;
     margin: 0 auto;
-    background: #7F7F7F;
-    position: absolute;
-    top: 301%;
-    width: 375px;
-    left: 0%;
-    border-radius: 0px;
-    margin-bottom: 30px;
-  }
-
-  .left>h1 {
-    text-align: center;
-    margin-top: 30px;
+    /* background: green; */
+    /*测试*/
   }
 
   #slider {
@@ -296,18 +289,6 @@
 
   .wai>.left>p {
     margin-top: 10px;
-  }
-
-  .left {
-    width: 380px;
-    height: 300px;
-    position: absolute;
-    top: 100%;
-    left: -1%;
-    z-index: 18;
-    color: white;
-    background: #7F7F7F;
-    text-align: center;
   }
 }
 
@@ -383,8 +364,9 @@
 
 /*注测页面*/
 .zyn-right-registration {
-  width: 600px;
-  height: 420px;
+  /* width: 600px; */
+  height: 630px;
+  display: grid;
   background: rgba(255, 255, 255, 0.9);
   position: absolute;
   bottom: 4%;
@@ -440,7 +422,7 @@
   border: none;
   outline: none;
   font-size: 18px;
-  margin: 30px auto;
+  margin: 15px auto;
   background: #79A3CC;
   color: #fff;
   display: block;
