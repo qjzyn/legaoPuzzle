@@ -5,7 +5,6 @@
 		<title>乐高拼图</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<!--<link href='http://fonts.useso.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>-->
 
 		<link rel="stylesheet" type="text/css" href="public/lib/css/bootstrap1.min.css" />
 		<link rel="stylesheet" type="text/css" href="public/css/index.css" />
@@ -247,6 +246,19 @@
 		<script src="public/lib/js/jquery-1.8.3.min.js"></script>
 		<script src="public/js/js.js"></script>
 		<script src="public/js/Carousel.js"></script>
+		<!--动画特效-->
+		<script src="public/js/EffectItem.js"</script>
+    	<script src="public/js/Effect.js"></script>
+		<script type="text/javascript">
+         new Effect({
+        //特效图片，多张图片时传入数组，单个图片时传入字符串
+        effectUrl : ["public/images/xue.png","public/images/xin.png","public/images/a1.png","public/images/a2.png","public/images/a3.png","public/images/a4.png"],
+        //特效旋转，1/true为旋转，0/false为不旋转
+        rotate : 1,
+        //特效方向，left/right/up/down
+        direction : "up"
+    });
+    </script>
 	</body>
 
 </html>

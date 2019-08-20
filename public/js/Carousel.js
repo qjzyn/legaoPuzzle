@@ -103,3 +103,7 @@ $(".c-banner .jumpBtn ul li").each(function(){
 		time =setInterval(intervalImg,3000);
 	});
 });
+
+
+
+    
