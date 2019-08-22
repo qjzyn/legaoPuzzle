@@ -1,0 +1,128 @@
+
+.video{
+}
+.nav_1{
+	height: 600px;
+}
+.opcity{
+	/*height: 500px;*/
+	margin: 0 auto;
+	/*background: red;*/
+	position: relative;
+	top: -505px;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	/*padding-top:150px ;*/
+}
+.nav_2_kuang{
+	margin:  0 auto;
+	/*border: 1px solid red;*/	/*测试*/
+	width: 300px;
+	height: 100%;
+	background: #ffffff3d;
+}
+.nav_2_photo{
+	margin: 100px auto auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border:3px solid #777777;
+	overflow: hidden;
+}
+.nav_2_photo>img{
+	width: 100px;
+	height: 100px;
+	
+	text-align: center;
+}
+.nav_2_kuang_login{
+	margin: 0 auto;
+	text-align: center;
+	margin-top:50px;
+	
+}
+.nav_2_kuang>h1 {
+       color: #fff;
+    /* padding: 0 0 15px 0; */
+    text-align: center;
+    background: #777;
+    line-height: 124px;
+    margin: 0;
+    height: 125px;
+}
+.nav_2_kuang_login .login,.nav_2_kuang_login .registered{
+	width: 70px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	font-size: 17px;
+	margin: 0 30px;
+	color: #777;
+	background: #fff;
+}
+.nav_2_kuang_login .login:hover{
+	color: #fff;
+	background: #777;
+}
+.nav_2_kuang_login .registered:hover{
+	color: #fff;
+	background: #777;
+}
+.nav_2_kuang>div:nth-child(1),.nav_2_kuang>div:nth-child(3){
+	margin: 100px 0 35px 0 ;
+}
+
+/*第三部分结束*/
+@media (max-width: 1600px) {
+
+}
+@media (max-width: 1320px) {
+
+}
+@media (min-width: 992px)
+	.vidbacking{
+		height: 600px;
+	}
+	.video{
+		margin-top: 0px;
+	}
+}
+@media (max-width: 991px)  {
+	.nav_1{
+	height: 600px;
+	}
+	.nav_2_kuang {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 100%;
+    background: #ffffff3d;
+    margin-top: 140px;
+	}
+	.video{
+		margin-top: 211px;
+	}
+	.nav_2_kuang {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 100%;
+    background: #ffffff3d;
+    margin-top: 320px;
+}
+}
+@media only screen and (max-width:479px) {
+		.opcity{
+		/*height: 500px;*/
+		margin: 0 auto;
+		/*background: red;*/
+		position: relative;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.8);
+		/*padding-top:150px ;*/
+	}
+	.video{
+		margin-top: 0px;
+	}
+}
