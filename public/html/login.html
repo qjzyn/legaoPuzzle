@@ -10,14 +10,13 @@
     <!-- 新加 -->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../lib/css/bootstrap1.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/head.css"/>
-
+	<link rel="stylesheet" type="text/css" href="../css/head.css"/>
     <!--框架样式-->
-    <link href="../lib/Slider/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="../lib/Slider/css/bootstrap.min.css" rel="stylesheet">-->
     <!--图标样式-->
     <link href="https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css" rel="stylesheet">
     <!--主要样式-->
-    <link href="../lib/Slider/css/slidercaptcha.css" rel="stylesheet" />
+    <!--<link href="../lib/Slider/css/slidercaptcha.css" rel="stylesheet" />-->
     <style>
       .slidercaptcha {
         margin: 0 auto;
@@ -64,28 +63,23 @@
         <div class="collapse navbar-collapse noPadding" id="myNavbar">
           <div class="navbar-right menustyle">
             <ul class="nav navbar-nav">
-            	<li>
-								<a href="../../index.html">
-									<p>乐高主页</p>
-								</a>
-							</li>
               <li>
                 <a href="Product_introduction.html">
                   <p>数字健康</p>
                 </a>
               </li>
               <li>
-                <a href="../../index.html">
+                <a href="#">
                   <p>拼图游戏</p>
                 </a>
               </li>
               <li>
-                <a href="../html/Contact_us.html">
+                <a href="#">
                   <p>关于我们</p>
                 </a>
               </li>
               <li>
-                <a href="personal.html">登录</a>
+                <a href="login.html">登录</a>
               </li>
             </ul>
           </div>
@@ -98,7 +92,7 @@
         <div class="container m-0-auto p-0">
           <div id="slider">
             <ul class="sliderImg">
-              <li>
+              <li >
                 <img src="../img/banner2.jpg" />
               </li>
               <li>
@@ -107,7 +101,7 @@
               <li>
                 <img src="../img/banner4.jpg" />
               </li>
-            </ul> -->
+            </ul> #nbsp
             <!--轮播按钮-->
             <ul class="sliderBtn">
               <li class="on"></li>
@@ -122,18 +116,18 @@
           </div>
           <div class="main-right pull-right">
             <h1>已有账户，请登录</h1>
-            <form action="/login" method="post">
-              <input type="text" placeholder="请输入账号" class="user">
-              <span class='msg'></span>
-              <input type="password" placeholder="请输入密码" class="user-pwd">
-              <span class='msg'></span>
-              <p>
-                <span><input type="checkbox">记住密码</span>
-                <a href="">找回密码</a>
-              </p>
-              <input type="submit" value="登录" class="login" onclick="login()">
-              <!-- <button><a href="../../index.html">登录</a></button> -->
-            </form>
+            <input type="text" placeholder="用户名" class="user">
+            <span class='msg'>&nbsp;&nbsp;</span>
+            <input type="password" placeholder="密码" class="user-pwd">
+            <span class='msg'>&nbsp;&nbsp;</span>
+            <p>
+              <span>
+                <input type="checkbox" id="remember_pwd">
+                <label for="remember_pwd">记住密码</label>
+              </span>
+              <a href="">找回密码</a>
+            </p>
+            <button class="login" onclick="Login()">登录</button>
           </div>
         </div>
       </div>
@@ -152,18 +146,22 @@
         </div>
       </div>
     </div>
-    <script src="../lib/Slider/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-    <script src="../lib/Slider/js/longbow.slidercaptcha.js"></script>
+    <script src="../Slider/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../Slider/js/longbow.slidercaptcha.js"></script>
+   
     <script>
       $('#captcha').sliderCaptcha({
-            repeatIcon: 'fa fa-redo',
-            setSrc: function () {
-              return 'http://images.sdgxgz.com/Pic' + Math.round(Math.random() * 136) + '.jpg';
-            },
-            onSuccess: function () {
-              alert('验证通过!');
-              $(".slider_box").hide("1000/16", function () {});
-            });
+        repeatIcon: 'fa fa-redo',
+        setSrc: function () {
+          return 'http://images.sdgxgz.com/Pic' + Math.round(Math.random() * 136) + '.jpg';
+        },
+        onSuccess: function () {
+          alert('验证通过!');
+          $(".slider_box").hide("1000/16", function () {});
+          alert("登录成功");
+          window.location.href = "http://127.0.0.1:5050/index.html";
+        }
+      });
     </script>
     <!--轮播结束-->
     <!--js-->

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/head.css"/>
     <!-- 新加 -->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../lib/css/bootstrap1.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/head.css"/>
     <title>注册</title>
   </head>
 
@@ -32,28 +32,23 @@
         <div class="collapse navbar-collapse noPadding" id="myNavbar">
           <div class="navbar-right menustyle">
             <ul class="nav navbar-nav">
-            	<li>
-								<a href="../../index.html">
-									<p>乐高主页</p>
-								</a>
-							</li>
               <li>
                 <a href="Product_introduction.html">
                   <p>数字健康</p>
                 </a>
               </li>
               <li>
-                <a href="../../index.html">
+                <a href="#">
                   <p>拼图游戏</p>
                 </a>
               </li>
               <li>
-                <a href="../html/Contact_us.html">
+                <a href="#">
                   <p>关于我们</p>
                 </a>
               </li>
               <li>
-                <a href="personal.html">登录</a>
+                <a href="login.html">登录</a>
               </li>
             </ul>
           </div>
@@ -91,22 +86,19 @@
       </div>
       <div class="zyn-right-registration">
         <h1>请注册</h1>
-        <form action="/reg" method="post">
-          <input type="text" placeholder="用户名" class="name" />
-          <span class='msg'></span>
-          <input type="password" placeholder="密码" class="pwd" />
-          <span class='msg'></span>
-          <input type="password" placeholder="重复密码" class="rpwd" />
-          <span class='msg'></span>
-          <input type="text" placeholder="性别" class="sex" />
-          <span class='msg'></span>
-          <input type="email" placeholder="电子邮箱" class="email" />
-          <span class='msg'></span>
-          <input type="tel" placeholder="手机电话" class="phone" />
-          <span class='msg'></span>
-          <input type="submit" value="注册" class="register">
-          <!-- <button class="register"><a href="#">确认注册</a></button> -->
-        </form>
+        <input type="text" placeholder="用户名" class="name" />
+        <span class='msg'></span>
+        <input type="password" placeholder="密码" class="pwd" />
+        <span class='msg'></span>
+        <input type="password" placeholder="重复密码" class="rpwd" />
+        <span class='msg'></span>
+        <input type="text" placeholder="性别" class="sex" />
+        <span class='msg'></span>
+        <input type="email" placeholder="电子邮箱" class="email" />
+        <span class='msg'></span>
+        <input type="tel" placeholder="手机电话" class="phone" />
+        <span class='msg'></span>
+        <button class="register" onclick="reg()">注册</button>
       </div>
       <!--内容-->
       <!--内容结束-->
@@ -153,7 +145,7 @@
       <script src="../lib/js/jquery-1.8.3.min.js"></script>
       <script src="../js/js.js"></script>
       <script src="../js/index.js"></script>
-      <script src="../../routers/ajax.js"></script>
+      <!-- <script src="../../routers/ajax.js"></script> -->
   </body>
 
 </html>
