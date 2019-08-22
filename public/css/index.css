@@ -370,29 +370,29 @@ body > div > div.bannerbox > ul > li.third-li > div > div{
 	}
 	.nav_kuang{
 	    width: 300px;
-    height: 200px;
-    /*border: 1px solid red;*/	/*测试*/
-    z-index: 3;
-    margin-left: -337px;
-    margin-top: -138px;
+    	height: 200px;
+    	/*border: 1px solid red;*/	/*测试*/
+    	z-index: 3;
+    	margin-left: -337px;
+    	margin-top: -60px;
 }
 	.nav_kuang2{
 		width: 300px;
 	    height: 200px;
-	    /*border: 1px solid red;*/	/*测试*/
+	    border: 1px solid red;	/*测试*/
 	    z-index: 3;
-	    margin: -207px 0 0 0px;
+	    margin: -130px 0 0 0px;
 	}
 	.nav_kuang3{
 		width: 300px;
 		height: 200px;
 		/*border: 1px solid red;*/	/*测试*/
 		z-index: 3;
-		margin:36px 0 0 0px;
+		margin:0px 0 0 0px;
 	}
 	.nav_kuang>h1,.nav_kuang>h5,.nav_kuang2>h1,.nav_kuang2>h5,.nav_kuang3>h1,.nav_kuang3>h5{
 		color: #1B1E21; /*改为#fff*/
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 		width: 300px;
 		line-height: 25px;
 	}

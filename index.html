@@ -248,5 +248,18 @@
 		<script src="public/js/Carousel.js"></script>
 		<!--轮播js-->
 		<script src="public/lib/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--花瓣特效-->
+		<script src="public/lib/js/jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="public/lib/js/snowfall.jquery.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+        $(document).snowfall('clear');
+        $(document).snowfall({
+            image: "public/img/k1.png",
+            flakeCount:15,
+            minSize: 20,
+            maxSize: 50
+        });
+    </script>
 	</body>
 </html>
