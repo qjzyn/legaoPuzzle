@@ -22,14 +22,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 520px;
   overflow: hidden;
   opacity: 0;
   transition: all ease 0.7s;
 }
-.sliderImg>li>img{
-	height: 600px;
-}
+
 .sliderImg>.show {
   opacity: 1;
   z-index: 10;
@@ -47,7 +45,7 @@
 /*外开始*/
 .wai {
   width: 100%;
-  height: 100%;
+  height: 700px;
   padding: 0 !important;
   margin: 0 auto !important;
   position: relative;
@@ -67,7 +65,6 @@
 .left>h1 {
   text-align: left;
   margin-top: 30px;
-  font-size: 25px;
 }
 
 .left>p {
@@ -88,13 +85,13 @@
 
 .main-right {
   width: 309px;
-  height: 363px;
+  height: 334px;
   background: rgba(255, 255, 255, 0.9);
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   right: 120px;
   border-radius: 10px;
-  /*padding-top: 45px;*/
+  padding-top: 45px;
   z-index: 15;
 }
 
@@ -102,7 +99,7 @@
   font-size: 18px;
   text-align: center;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
 .user,
@@ -121,7 +118,7 @@
 
 .main-right p {
   width: 247px;
-  margin: 0 auto;
+  margin: 10px auto;
   overflow: hidden;
 }
 
@@ -140,20 +137,19 @@
   color: #000;
 }
 
-.main-right button,
-.main-right .login {
+.main-right button {
   width: 247px;
   height: 44px;
   border-radius: 44px;
   border: none;
   outline: none;
   font-size: 18px;
-  margin: 30px auto 0;
+  margin: 20px auto;
   background: #79A3CC;
   display: block;
 }
 
-.main-right button>a {
+.main-right button {
   color: #fff;
 }
 
@@ -173,14 +169,14 @@
   }
 
   .main-right {
-    width: 420px;
-    height: 450px;
+    width: 310px;
+    height: 315px;
     background: rgba(255, 255, 255, 0.9);
     position: absolute;
     bottom: 15%;
     right: 120px;
     border-radius: 10px;
-    padding-top: 45px;
+    padding: 15px 5px;
     z-index: 15;
   }
 
@@ -267,7 +263,6 @@
     margin: 0 auto;
     /* background: green; */
     /*测试*/
-   margin-top:240px;
   }
 
   #slider {
@@ -281,6 +276,7 @@
 
   .wai {
     width: 100%;
+    display: flex;
     padding-bottom: 30px;
     /* position: relative; */
     background: rgba(0, 0, 0, 0.5);
@@ -292,6 +288,22 @@
 
   .wai>.left>p {
     margin-top: 10px;
+  }
+
+  .wai>div>div.left {
+    display: contents;
+  }
+
+  .left>a {
+    width: 100%;
+  }
+
+  .left>h1 {
+    text-align: center
+  }
+
+  .left>p {
+    text-align: center
   }
 }
 
@@ -418,6 +430,10 @@
 
 }
 
+.msg {
+  font-size: 14px;
+}
+
 .zyn-right-registration>button {
   width: 247px;
   height: 44px;
@@ -438,6 +454,7 @@
 
 .zyn-right-registration>button:hover {
   background: #fff;
+  color: #79A3CC
 }
 
 /*新增开始*/
@@ -591,26 +608,8 @@
     /* line-height: 28px; */
     padding-top: 20px;
   }
-	.left {
-    width: 380px;
-    height: 300px;
-    position: absolute;
-    /* top: 30%; */
-    left: 6%;
-    z-index: 18;
-    color: white;
-}
-	.left {
-    width: 380px;
-    height: 290px;
-    position: absolute;
-    top: 16%;
-    left: 6%;
-    z-index: 18;
-   }
-	.sliderImg>li>img{
-	height: 200px;
-	}
+
+
 }
 
 .left {

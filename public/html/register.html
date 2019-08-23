@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/public.css">
-    <link rel="stylesheet" type="text/css" href="../css/head.css"/>
     <!-- 新加 -->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../lib/css/bootstrap1.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/head.css"/>
     <title>注册</title>
   </head>
 
   <body>
-    <!-- 头部开始 -->
+     <!-- 头部开始 -->
     <nav class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">
       <div class="container">
 
@@ -32,6 +32,11 @@
         <div class="collapse navbar-collapse noPadding" id="myNavbar">
           <div class="navbar-right menustyle">
             <ul class="nav navbar-nav">
+            	<li>
+								<a href="../../index.html">
+									<p>乐高主页</p>
+								</a>
+							</li>
               <li>
                 <a href="Product_introduction.html">
                   <p>数字健康</p>
@@ -43,12 +48,12 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="../html/Contact_us.html">
                   <p>关于我们</p>
                 </a>
               </li>
               <li>
-                <a href="login.html">登录</a>
+                <a href="personal.html">个人中心</a>
               </li>
             </ul>
           </div>
@@ -86,23 +91,23 @@
       </div>
       <div class="zyn-right-registration">
         <h1>请注册</h1>
-        <input type="text" placeholder="用户名" class="name" />
+        <input type="text" placeholder="用户名" class="name" name="uname" />
         <span class='msg'></span>
-        <input type="password" placeholder="密码" class="pwd" />
+        <input type="password" placeholder="密码" class="pwd" name="upwd" />
         <span class='msg'></span>
-        <input type="password" placeholder="重复密码" class="rpwd" />
+        <input type="password" placeholder="重复密码" class="rpwd" name="rupwd" />
         <span class='msg'></span>
-        <input type="text" placeholder="性别" class="sex" />
+        <input type="text" placeholder="性别" class="sex" name="sex" />
         <span class='msg'></span>
-        <input type="email" placeholder="电子邮箱" class="email" />
+        <input type="email" placeholder="电子邮箱" class="email" name=email />
         <span class='msg'></span>
-        <input type="tel" placeholder="手机电话" class="phone" />
+        <input type="tel" placeholder="手机电话" class="phone" name="tel" />
         <span class='msg'></span>
         <button class="register" onclick="reg()">注册</button>
+        <!-- <button id="register">注册</button> -->
       </div>
       <!--内容-->
       <!--内容结束-->
-
       <!--js-->
       <script type="text/javascript">
         var img = document.querySelectorAll(".sliderImg>li");
@@ -144,8 +149,27 @@
       <script src="../lib/js/popper.min.js"></script>
       <script src="../lib/js/jquery-1.8.3.min.js"></script>
       <script src="../js/js.js"></script>
-      <script src="../js/index.js"></script>
-      <!-- <script src="../../routers/ajax.js"></script> -->
+      <script src="../js/register.js"></script>
+      <!-- <script>
+        $("#register").click(function () {
+          $.ajax({
+            type: "get",
+            url: "http://127.0.0.1:5050/users/reg",
+            data: {
+              uname: $(".name").val(),
+              upwd: $(".pwd").val(),
+              sex: $(".sex").val(),
+              email: $(".email").val(),
+              phone: $(".phone").val()
+            },
+            success: function (data) {
+              console.log(data);
+            }
+          }).then(result => {
+            console.log(result);
+          });
+        });
+      </script> -->
   </body>
 
 </html>

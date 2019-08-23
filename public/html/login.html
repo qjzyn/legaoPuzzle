@@ -1,211 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>登录</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/public.css">
-    <link rel="stylesheet" href="../css/login.css">
-    <!-- 新加 -->
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../lib/css/bootstrap1.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/head.css"/>
-    <!--框架样式-->
-    <!--<link href="../lib/Slider/css/bootstrap.min.css" rel="stylesheet">-->
-    <!--图标样式-->
-    <link href="https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css" rel="stylesheet">
-    <!--主要样式-->
-    <!--<link href="../lib/Slider/css/slidercaptcha.css" rel="stylesheet" />-->
-    <style>
-      .slidercaptcha {
-        margin: 0 auto;
-        width: 314px;
-        height: 286px;
-        border-radius: 4px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
-        margin-top: 40px;
-      }
+<head>
+  <title>登录</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <!-- 新加 -->
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../lib/css/bootstrap1.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/head.css" />
+  <!--框架样式-->
+  <!-- <link href="../lib/Slider/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!--图标样式-->
+  <link href="https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css" rel="stylesheet">
+  <!--主要样式-->
+  <link href="../lib/Slider/css/slidercaptcha.css" rel="stylesheet" />
+  <style>
+    .slidercaptcha {
+      padding: 8px 0;
+      margin: 70px auto;
+      width: 314px;
+      height: 286px;
+      border-radius: 4px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    }
 
-      .slidercaptcha .card-body {
-        padding: 1rem;
-      }
+    .slidercaptcha .card-body {
+      padding: 1rem;
+    }
 
-      .slidercaptcha canvas:first-child {
-        border-radius: 4px;
-        border: 1px solid #e6e8eb;
-      }
+    .slidercaptcha canvas:first-child {
+      border-radius: 4px;
+      border: 1px solid #e6e8eb;
+    }
 
-      .slidercaptcha.card .card-header {
-        background-image: none;
-        background-color: rgba(0, 0, 0, 0.03);
-      }
+    .slidercaptcha.card .card-header {
+      color: #ddd;
+      text-align: center;
+      background-image: none;
+      background-color: rgba(0, 0, 0, 0.03);
+    }
 
-      .refreshIcon {
-        top: -35px;
-      }
-    </style>
-  </head>
+    .refreshIcon {
+      top: -30px;
+      color: rgba(0, 0, 0, .45);
+    }
+  </style>
+</head>
 
-  <body>
-    <!-- 头部开始 -->
-    <nav class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">
-      <div class="container">
-        <div class="navbar-header" style="margin-bottom: 30px;">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="sr-only">logo</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand brandStyle" href="../../index.html"><img src="../img/logo.jpg" /></a>
-        </div>
-        <div class="collapse navbar-collapse noPadding" id="myNavbar">
-          <div class="navbar-right menustyle">
-            <ul class="nav navbar-nav">
-              <li>
-                <a href="Product_introduction.html">
-                  <p>数字健康</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>拼图游戏</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>关于我们</p>
-                </a>
-              </li>
-              <li>
-                <a href="login.html">登录</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <!-- 头部开始 -->
+  <nav class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header" style="margin-bottom: 30px;">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="sr-only">logo</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand brandStyle" href="../../index.html"><img src="../img/logo.jpg" /></a>
+      </div>
+
+      <div class="collapse navbar-collapse noPadding" id="myNavbar">
+        <div class="navbar-right menustyle">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../index.html">
+                <p>乐高主页</p>
+              </a>
+            </li>
+            <li>
+              <a href="Product_introduction.html">
+                <p>数字健康</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>拼图游戏</p>
+              </a>
+            </li>
+            <li>
+              <a href="../html/Contact_us.html">
+                <p>关于我们</p>
+              </a>
+            </li>
+            <li>
+              <a href="personal.html">个人中心</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-    <!-- 头部结束 -->
-    <div class="container-fluid p-0 m-0-auto w-100">
-      <div class="wai container p-0 m-0-auto">
-        <div class="container m-0-auto p-0">
-          <div id="slider">
-            <ul class="sliderImg">
-              <li >
-                <img src="../img/banner2.jpg" />
-              </li>
-              <li>
-                <img src="../img/banner3.jpg" />
-              </li>
-              <li>
-                <img src="../img/banner4.jpg" />
-              </li>
-            </ul> #nbsp
-            <!--轮播按钮-->
-            <ul class="sliderBtn">
-              <li class="on"></li>
-              <li></li>
-              <li></li>
-            </ul>
+
+    </div>
+  </nav>
+  <!-- 头部结束 -->
+  <div class="container-fluid p-0 m-0-auto w-100">
+    <div class="wai container p-0 m-0-auto">
+      <div class="container m-0-auto p-0">
+        <div id="slider">
+          <ul class="sliderImg">
+            <li>
+              <img src="../img/banner2.jpg" />
+            </li>
+            <li>
+              <img src="../img/banner3.jpg" />
+            </li>
+            <li>
+              <img src="../img/banner4.jpg" />
+            </li>
+          </ul> -->
+          <!--轮播按钮-->
+          <ul class="sliderBtn">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="left">
+          <h1>您好，<br /><br>欢迎来到乐高账户系统</h1>
+          <p>还没有乐高账户，请申请</p>
+          <a href="register.html">注册乐高账户</a>
+        </div>
+        <div class="main-right pull-right">
+          <h1>已有账户，请登录</h1>
+          <input type="text" placeholder="用户名" class="user">
+          <span class='msg'></span>
+          <input type="password" placeholder="密码" class="user-pwd">
+          <span class='msg'></span>
+          <p>
+            <span>
+              <input type="checkbox" id="remember_pwd">
+              <label for="remember_pwd">记住密码</label>
+            </span>
+            <a href="">找回密码</a>
+          </p>
+          <button class="login" onclick="Login()">登录</button>
+          <!-- <button class="login">登录</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid slider_box">
+    <div class="form-row">
+      <div class="col-12">
+        <div class="slidercaptcha card">
+          <div class="card-header">
+            <span>请完成安全验证</span>
           </div>
-          <div class="left">
-            <h1>您好，<br /><br>欢迎来到乐高账户系统</h1>
-            <p>还没有乐高账户，请申请</p>
-            <a href="../html/register.html">注册乐高账户</a>
-          </div>
-          <div class="main-right pull-right">
-            <h1>已有账户，请登录</h1>
-            <input type="text" placeholder="用户名" class="user">
-            <span class='msg'>&nbsp;&nbsp;</span>
-            <input type="password" placeholder="密码" class="user-pwd">
-            <span class='msg'>&nbsp;&nbsp;</span>
-            <p>
-              <span>
-                <input type="checkbox" id="remember_pwd">
-                <label for="remember_pwd">记住密码</label>
-              </span>
-              <a href="">找回密码</a>
-            </p>
-            <button class="login" onclick="Login()">登录</button>
+          <div class="card-body">
+            <div id="captcha"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid slider_box">
-      <div class="form-row">
-        <div class="col-12">
-          <div class="slidercaptcha card">
-            <div class="card-header">
-              <span>请完成安全验证</span>
-            </div>
-            <div class="card-body">
-              <div id="captcha"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="../Slider/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-    <script src="../Slider/js/longbow.slidercaptcha.js"></script>
-   
-    <script>
-      $('#captcha').sliderCaptcha({
-        repeatIcon: 'fa fa-redo',
-        setSrc: function () {
-          return 'http://images.sdgxgz.com/Pic' + Math.round(Math.random() * 136) + '.jpg';
-        },
-        onSuccess: function () {
-          alert('验证通过!');
-          $(".slider_box").hide("1000/16", function () {});
-          alert("登录成功");
-          window.location.href = "http://127.0.0.1:5050/index.html";
-        }
+  </div>
+  <script src="../lib/Slider/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+  <script src="../lib/Slider/js/longbow.slidercaptcha.js"></script>
+  <script>
+    $('#captcha').sliderCaptcha({
+      repeatIcon: 'fa fa-redo',
+      setSrc: function () {
+        return 'http://images.sdgxgz.com/Pic' + Math.round(Math.random() * 136) + '.jpg';
+      },
+      onSuccess: function () {
+        alert('验证通过!');
+        $(".slider_box").hide("1000/16", function () {});
+        alert("登录成功");
+        window.location.href = "http://127.0.0.1:5050";
+      }
+    });
+  </script>
+  <!--轮播结束-->
+  <!--js-->
+  <script type="text/javascript">
+    var img = document.querySelectorAll(".sliderImg>li");
+    var dot = document.querySelectorAll(".sliderBtn>li");
+    for (var i = 0; i < dot.length; i++) {
+      var btn = dot[i];
+      btn.index = i;
+      btn.onmouseover = function () {
+        d = this.index;
+        className(d);
+      }
+    }
+    var d = 0;
+    /*封装类名函数节省代码*/
+    function className(n) {
+      for (var i = 0; i < img.length; i++) {
+        img[i].className = "";
+        dot[i].className = "";
+      }
+      img[n].className = "show";
+      dot[n].className = "on";
+      //ami(n)
+    }
+    var time = setInterval(function () {
+      if (d >= 2) {
+        d = 0;
+      } else {
+        d++;
+      }
+      className(d);
+    }, 1600)
+  </script>
+  <!--js-->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="../lib/js/bootstrap.min.js"></script>
+  <script src="../js/myscript.js"></script>
+  <script src="../lib/js/jquery.min.js"></script>
+  <script src="../lib/js/popper.min.js"></script>
+  <script src="../lib/js/jquery-1.8.3.min.js"></script>
+  <script src="../js/js.js"></script>
+  <script src="../js/login.js"></script>
+  <!-- <script>
+      $(".login").click(function () {
+        $.ajax({
+          type: "get",
+          url: "http://127.0.0.1:5050/users/login",
+          data: {
+            uname: uname,
+            upwd: upwd
+          },
+          success: function (data) {
+            console.log(data);
+          }
+        }).then(result => {
+          console.log(result);
+        });
       });
     </script>
-    <!--轮播结束-->
-    <!--js-->
-    <script type="text/javascript">
-      var img = document.querySelectorAll(".sliderImg>li");
-      var dot = document.querySelectorAll(".sliderBtn>li");
-      for (var i = 0; i < dot.length; i++) {
-        var btn = dot[i];
-        btn.index = i;
-        btn.onmouseover = function () {
-          d = this.index;
-          className(d);
-        }
-      }
-      var d = 0;
-      /*封装类名函数节省代码*/
-      function className(n) {
-        for (var i = 0; i < img.length; i++) {
-          img[i].className = "";
-          dot[i].className = "";
-        }
-        img[n].className = "show";
-        dot[n].className = "on";
-        //ami(n)
-      }
-      var time = setInterval(function () {
-        if (d >= 2) {
-          d = 0;
-        } else {
-          d++;
-        }
-        className(d);
-      }, 1600)
-    </script>
-    <!--js-->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="../lib/js/bootstrap.min.js"></script>
-    <script src="../js/myscript.js"></script>
-    <script src="../lib/js/jquery.min.js"></script>
-    <script src="../lib/js/popper.min.js"></script>
-    <script src="../lib/js/jquery-1.8.3.min.js"></script>
-    <script src="../js/js.js"></script>
-    <script src="../js/index.js"></script>
-    <script src="../../routers/ajax.js"></script>
-  </body>
+ -->
+</body>
 
 </html>
