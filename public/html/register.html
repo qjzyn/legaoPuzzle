@@ -1,156 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/public.css">
-    <!-- 新加 -->
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../lib/css/bootstrap1.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/head.css"/>
-    <title>注册</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/public.css">
+  <!-- 新加 -->
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../lib/css/bootstrap1.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/head.css" />
+  <title>注册</title>
+</head>
 
-  <body>
-     <!-- 头部开始 -->
-    <nav class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">
-      <div class="container">
+<body>
+  <!-- 头部开始 -->
+  <nav class="navbar navbar-default navbar-fixed-top noBorder" role="navigation">
+    <div class="container">
 
-        <div class="navbar-header" style="margin-bottom: 30px;">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="sr-only">logo</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand brandStyle" href="../../index.html"><img src="../img/logo.jpg" /></a>
+      <div class="navbar-header" style="margin-bottom: 30px;">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="sr-only">logo</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand brandStyle" href="../../index.html"><img src="../img/logo.jpg" /></a>
+      </div>
+
+      <div class="collapse navbar-collapse noPadding" id="myNavbar">
+        <div class="navbar-right menustyle">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../index.html">
+                <p>乐高主页</p>
+              </a>
+            </li>
+            <li>
+              <a href="Product_introduction.html">
+                <p>数字健康</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p>拼图游戏</p>
+              </a>
+            </li>
+            <li>
+              <a href="../html/Contact_us.html">
+                <p>关于我们</p>
+              </a>
+            </li>
+            <li>
+              <a href="personal.html">个人中心</a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="collapse navbar-collapse noPadding" id="myNavbar">
-          <div class="navbar-right menustyle">
-            <ul class="nav navbar-nav">
-            	<li>
-								<a href="../../index.html">
-									<p>乐高主页</p>
-								</a>
-							</li>
-              <li>
-                <a href="Product_introduction.html">
-                  <p>数字健康</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>拼图游戏</p>
-                </a>
-              </li>
-              <li>
-                <a href="../html/Contact_us.html">
-                  <p>关于我们</p>
-                </a>
-              </li>
-              <li>
-                <a href="personal.html">个人中心</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    </div>
+  </nav>
+  <!-- 头部结束 -->
+  <!-- 内容开始 -->
+  <div class="wai">
+    <div id="slider">
+      <ul class="sliderImg">
+        <li>
+          <img src="../img/banner.jpg" alt="">
+        </li>
+        <li>
+          <img src="../img/banner2.jpg" />
+        </li>
+        <li>
+          <img src="../img/banner3.jpg" alt="">
+        </li>
+      </ul>
+      <!--轮播按钮-->
+      <ul class="sliderBtn">
+        <li class="on"></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!--轮播结束-->
+    <div class="left_2">
+      <h1>您好，<br /><br />
+        欢迎来到企业账户系统<br /><br />注册页面
+      </h1>
+    </div>
+    <div class="zyn-right-registration">
+      <h1>请注册</h1>
+      <input type="text" placeholder="用户名" class="name" name="uname" />
+      <span class='msg'></span>
+      <input type="password" placeholder="密码" class="pwd" name="upwd" />
+      <span class='msg'></span>
+      <input type="password" placeholder="重复密码" class="rpwd" name="rupwd" />
+      <span class='msg'></span>
+      <input type="text" placeholder="性别" class="sex" name="sex" />
+      <span class='msg'></span>
+      <input type="email" placeholder="电子邮箱" class="email" name=email />
+      <span class='msg'></span>
+      <input type="tel" placeholder="手机电话" class="phone" name="tel" />
+      <span class='msg'></span>
+      <button class="register" onclick="reg()">注册</button>
+      <!-- <button id="register">注册</button> -->
+    </div>
+    <!--内容-->
+    <!--内容结束-->
+    <!--js-->
+    <script type="text/javascript">
+      var img = document.querySelectorAll(".sliderImg>li");
 
-      </div>
-    </nav>
-    <!-- 头部结束 -->
-    <!-- 内容开始 -->
-    <div class="wai">
-      <div id="slider">
-        <ul class="sliderImg">
-          <li>
-            <img src="../img/banner.jpg" alt="">
-          </li>
-          <li>
-            <img src="../img/banner2.jpg" />
-          </li>
-          <li>
-            <img src="../img/banner3.jpg" alt="">
-          </li>
-        </ul>
-        <!--轮播按钮-->
-        <ul class="sliderBtn">
-          <li class="on"></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-      <!--轮播结束-->
-      <div class="left_2">
-        <h1>您好，<br /><br />
-          欢迎来到企业账户系统<br /><br />注册页面
-        </h1>
-      </div>
-      <div class="zyn-right-registration">
-        <h1>请注册</h1>
-        <input type="text" placeholder="用户名" class="name" name="uname" />
-        <span class='msg'></span>
-        <input type="password" placeholder="密码" class="pwd" name="upwd" />
-        <span class='msg'></span>
-        <input type="password" placeholder="重复密码" class="rpwd" name="rupwd" />
-        <span class='msg'></span>
-        <input type="text" placeholder="性别" class="sex" name="sex" />
-        <span class='msg'></span>
-        <input type="email" placeholder="电子邮箱" class="email" name=email />
-        <span class='msg'></span>
-        <input type="tel" placeholder="手机电话" class="phone" name="tel" />
-        <span class='msg'></span>
-        <button class="register" onclick="reg()">注册</button>
-        <!-- <button id="register">注册</button> -->
-      </div>
-      <!--内容-->
-      <!--内容结束-->
-      <!--js-->
-      <script type="text/javascript">
-        var img = document.querySelectorAll(".sliderImg>li");
-
-        var dot = document.querySelectorAll(".sliderBtn>li");
-        for (var i = 0; i < dot.length; i++) {
-          var btn = dot[i];
-          btn.index = i;
-          btn.onmouseover = function () {
-            d = this.index;
-            className(d);
-          }
-        }
-        var d = 0;
-        /*封装类名函数节省代码*/
-        function className(n) {
-          for (var i = 0; i < img.length; i++) {
-            img[i].className = "";
-            dot[i].className = "";
-          }
-          img[n].className = "show";
-          dot[n].className = "on";
-          //ami(n)
-        }
-        var time = setInterval(function () {
-          if (d >= 2) {
-            d = 0;
-          } else {
-            d++;
-          }
+      var dot = document.querySelectorAll(".sliderBtn>li");
+      for (var i = 0; i < dot.length; i++) {
+        var btn = dot[i];
+        btn.index = i;
+        btn.onmouseover = function () {
+          d = this.index;
           className(d);
-        }, 1600)
-      </script>
-      <!--js-->
-      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script src="../lib/js/bootstrap.min.js"></script>
-      <script src="../js/myscript.js"></script>
-      <script src="../lib/js/jquery.min.js"></script>
-      <script src="../lib/js/popper.min.js"></script>
-      <script src="../lib/js/jquery-1.8.3.min.js"></script>
-      <script src="../js/js.js"></script>
-      <script src="../js/register.js"></script>
-      <!-- <script>
+        }
+      }
+      var d = 0;
+      /*封装类名函数节省代码*/
+      function className(n) {
+        for (var i = 0; i < img.length; i++) {
+          img[i].className = "";
+          dot[i].className = "";
+        }
+        img[n].className = "show";
+        dot[n].className = "on";
+        //ami(n)
+      }
+      var time = setInterval(function () {
+        if (d >= 2) {
+          d = 0;
+        } else {
+          d++;
+        }
+        className(d);
+      }, 1600)
+    </script>
+    <!--js-->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../js/myscript.js"></script>
+    <script src="../lib/js/jquery.min.js"></script>
+    <script src="../lib/js/popper.min.js"></script>
+    <script src="../lib/js/jquery-1.8.3.min.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/register.js"></script>
+    <!-- <script>
         $("#register").click(function () {
           $.ajax({
             type: "get",
@@ -170,6 +170,6 @@
           });
         });
       </script> -->
-  </body>
+</body>
 
 </html>
