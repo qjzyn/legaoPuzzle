@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 //origin允许跨域域名列表
 //credentials跨域允许保存session
 app.use(cors({
-  origin: ["http://localhost:5050"],
+  origin: ["http://localhost:5050", "http://127.0.0.1:5050"],
   credentials: true
 }));
 app.use('/', indexRouter);
