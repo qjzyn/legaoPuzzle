@@ -50,5 +50,27 @@ router.get("/user", (req, res) => {
   pool.query(sql, (req, result) => {
     res.send(result);
   });
-})
+});
+
+
+router.get("/game", (req, res) => {
+  var sql = "SELECT * FROM lg_game";
+  pool.query(sql, (err, result) => {
+    if (err) throw err;
+    res.send(result);
+    console.log(result);
+    // for (let i = 0; i < result.length; i++) {
+    //   const element = result[i].img;
+    //   // console.log(element);
+    //   console.log(result[i].img);
+    // }
+  });
+});
+
+
+
+
+
+
+
 module.exports = router;
